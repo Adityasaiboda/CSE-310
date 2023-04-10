@@ -1,0 +1,11 @@
+//ternary operator -> conditional operator
+// min between two number
+class minoperator1
+{
+public static void main(String[] args)
+{
+int a=10, b=20;
+int mun=(a<b)?a:b;
+System.out.println(min);
+}
+}

@@ -1,0 +1,559 @@
+/////////10-01-2023///////
+class first
+{
+	public static void main(String[] args)
+	{
+		System.out.println("hello");
+    }
+}
+****************************
+class Var
+{ public static void main(String[] args)
+{int a=10,b=20;
+ float f=5.5f;
+ char c='g';
+ String d="art";
+ boolean count=false;
+ System.out.println("a is="+a);
+ System.out.println("b is="+b);
+ System.out.println("c is="+c);
+ System.out.println("d is="+d);
+ System.out.println("f is="+f);
+}
+
+ 
+}
+o/p:
+a is=10
+b is=20
+c is=g
+d is=art
+f is=5.5
+********************************
+//arthemic operators
+class operator1
+{
+public static void main(String[] args)
+{int a=20,b=5;
+System.out.println(a+b);
+System.out.println(a-b);
+System.out.println(a*b);
+System.out.println(a/b);
+System.out.println(a%b);
+}
+}
+o/p:
+25
+15
+100
+4
+0
+*********************************
+//left shift and right shift
+class operator2
+{
+public static void main(String[] args)
+{int a=20;
+System.out.println(a<<1);
+System.out.println(a>>2);
+
+}
+}
+o/p:
+40
+5
+***********************************
+//logical operators && ||
+// relational operators < > <= >==
+class operator3
+{
+public static void main(String[] args)
+{int a=20,b=10,c=30;
+System.out.println(a<b);
+System.out.println(b>c);
+System.out.println(a<b && b>c);
+System.out.println(a<b || b>c);
+
+
+}
+}
+o/p:
+false
+false
+false
+false
+****************************************
+////////11-01-2023///////
+//Bitwise operator &,|,!
+
+class operator4
+{
+public static void main(String[] args)
+{
+int a=10,b=20,c=15;
+System.out.println(a&b);
+System.out.println(a|b);
+}
+}
+o/p:
+0
+30
+**********************************
+//ternamry operators->conductions operators ?:
+
+class operator5
+{
+public static void main(String[] args)
+{
+int a=10,b=20;
+int min=(a<b)?a:b;
+int max=(a>b)?a:b;
+System.out.println(a+" "+b);
+System.out.println(min+" "+max);
+}
+}
+o/p:
+10 20
+10 is samller than20
+****************************************
+//sum of two numbers
+import java.util.Scanner;
+class sum
+{
+public static void main(String[] args)
+{
+Scanner obj=new Scanner(System.in);
+System.out.println("enter a number");
+int a=obj.nextInt();
+int b=obj.nextInt();
+int c=a+b;
+System.out.println("sum is "+c);
+}
+}
+o/p:
+enter a number
+25
+26
+sum is 51
+
+*********************************************
+//sum of float two numbers
+
+import java.util.Scanner;
+class sum
+{
+public static void main(String[] args)
+{
+Scanner obj=new Scanner(System.in);
+System.out.println("enter a number");
+float a=obj.nextFloat();
+float b=obj.nextFloat();
+float c=a+b;
+System.out.println("sum is "+c);
+}
+}
+o/p:
+enter a number
+56.25
+558.36
+sum is 614.61
+
+***************************************************************
+//////////////////////16/01/2023///////////////////////////////
+import java.util.scanner;
+class var1
+{
+public static void main(String[] arg)
+{
+Scanner obj= new Scanner(System.in);
+System.out.println("enter the string=");
+//String str=obj.next();
+String str=obj.nextLine();
+System.out.println(str);
+
+Scanner obj= new Scanner(System.in);
+System.out.println("enter the character=");
+char ch=obj.next().charAt(0); //take input for char
+System.out.println(ch);
+
+Scanner obj= new Scanner(System.in);
+System.out.println("enter the integer=");
+int a=obj.nextInt(); //Take interger input
+System.out.println(a);
+
+Scanner obj= new Scanner(System.in);
+System.out.println("enter the number=");
+boolean b1= obj.hasNextInt(); //this fn will return true if You have enter interger,otherwise false
+System.out.println(b1);
+}
+}
+**********************************************************************************************
+//sum of two bytes
+import java.util.Scanner;
+class sumbyte
+{
+public static void main(String[] args)
+{
+Scanner obj=new Scanner(System.in);
+System.out.println("enter frist number");
+byte a=obj.nextByte();
+System.out.println("enter second number");
+byte b=obj.nextByte();
+byte c=(byte)(a+b); //explicit conversion
+System.out.println(c);
+}
+}
+
+*************************************************************************************************
+//scope of varible
+class lifetime
+{
+public static void main(String[] args)
+{
+int x; //this variable is avalible to entire program
+x=10;
+if(x==10)
+{
+int y=20;  // y is declared inside this scope only.
+x=y*2;
+}
+//y=100 // give me error
+System.out.println(x);
+}
+}
+
+******************************************
+// greater number
+import java.util.Scanner;
+class greaternumber
+{
+public static void main(String[] args)
+{
+Scanner obj=new Scanner(System.in);
+System.out.println("enter frist number");
+int a=obj.nextInt();
+System.out.println("enter Second number");
+int b=obj.nextInt();
+if(a>b)
+{
+System.out.println("First is greater");
+}
+else 
+System.out.println("Second is greater");
+}
+}
+******************************************************************************
+// greater number
+import java.util.Scanner;
+class greaternumber
+{
+public static void main(String[] args)
+{
+Scanner obj=new Scanner(System.in);
+System.out.println("enter frist number");
+int a=obj.nextInt();
+System.out.println("enter Second number");
+int b=obj.nextInt();
+System.out.println("enter Third number");
+int c=obj.nextInt();
+if(a>b && a>c)
+{
+System.out.println("First is greater");
+}
+else if(b>a && b>c)
+{	
+System.out.println("Second is greater");
+}
+else 
+	System.out.println("Third is greater");
+}
+}
+****************************************************************************************
+///////////////////////////////////////17/01/2023//////////////////////////////////
+// entered character is vowel or consonent
+import java.util.Scanner;
+class switch12
+{
+public static void main(String[] args)
+{
+Scanner obj = new Scanner(System.in);
+char ch = obj.next().charAt(0); // take input from use
+switch(ch)
+{
+case 'a':
+case 'A':
+case 'e':
+case 'E':
+case 'i':
+case 'I':
+case 'o':
+case 'O':
+case 'u':
+case 'U':
+System.out.println("it is Vowel");
+break;
+default:
+System.out.println("it is consonent");
+}
+}
+}
+
+************************************************
+// reverse number
+import java.util.Scanner;
+class reversenumber
+{
+public static void main(String[] args)
+{
+Scanner obj = new Scanner(System.in);
+System.out.println("enter the number");
+int rem,y = 0 ;
+int n = obj.nextInt();
+while (n>0)
+{
+rem=n%10;
+y=y*10+rem;
+n=n/10;
+}
+System.out.println(y);
+}
+}
+****************************************************************************
+// break statement
+import java.util.Scanner;
+class break1
+{
+public static void main(String[] args)
+{
+int i,j;
+for(i=1;i<=3;i++)
+{
+for(j=1;j<=3;j++)
+{
+if(i==2 && j==2)
+{
+break;
+}
+System.out.println(i+" " +j);
+}
+}
+}
+}
+**************************************************************************************
+/////////////////////////////23/01/2023//////////////////////////////////////////////////
+// array
+/ Arrays 
+import java.util.Scanner;
+class array1
+{
+public static void main(String[] args)
+{
+	int a[]=new int[5],i;
+	Scanner obj = new Scanner(System.in);
+System.out.println("enter the 5 elements of the array");
+for(i=0;i<5;i++)
+{
+ a[i] = obj.nextInt();
+}
+for(i=0;i<5;i++)
+{
+System.out.println(a[i]);
+}
+}
+}
+
+******************************************************************************************************
+// 2DArrays 
+import java.util.Scanner;
+class array2
+{
+public static void main(String[] args)
+{
+	int a[][]=new int[2][2],i,j;
+	Scanner obj = new Scanner(System.in);
+System.out.println("enter the 2 elements of the array");
+for(i=0;i<a.length;i++)
+{
+for(j=0;j<a.length;j++)
+{
+a[i][j] = obj.nextInt();
+}
+}
+for(i=0;i<a.length;i++)
+{
+for(j=0;j<a.length;j++)
+{
+System.out.println(a[i][j]);
+}
+}
+}
+}
+******************************************************************************************************
+// 2DArrays 
+import java.util.Scanner;
+class array2
+{
+public static void main(String[] args)
+{
+	int a[][]=new int[2][],i,j;
+	a[0]= new int[3]; a[1]= new int[4];
+	Scanner obj = new Scanner(System.in);
+System.out.println("enter the 2 elements of the array");
+for(i=0;i<a.length;i++)
+{
+for(j=0;j<a[i].length;j++)
+{
+a[i][j] = obj.nextInt();
+}
+}
+for(i=0;i<a.length;i++)
+{
+for(j=0;j<a[i].length;j++)
+{
+System.out.print(a[i][j]+" ");
+}
+System.out.println();
+}
+}
+}
+**********************************************************************************************************
+// sum of array
+import java.util.Scanner;
+class sumarray1
+{
+public static void main(String[] args)
+{
+	int a[]=new int[5],i,sum=0;
+	Scanner obj = new Scanner(System.in);
+System.out.println("enter the  elements of the array");
+for(i=0;i<5;i++)
+{
+a[i] = obj.nextInt();
+}
+for(i=0;i<5;i++)
+{
+	sum=sum+a[i];
+}
+System.out.println(sum);
+}
+}
+*************************************************************************************************************************
+// maximum number in a array
+import java.util.Scanner;
+class maxarray1
+{
+public static void main(String[] args)
+{
+	int a[]=new int[5],i,max=a[0];
+	Scanner obj = new Scanner(System.in);
+System.out.println("enter the  elements of the array");
+for(i=0;i<5;i++)
+{
+a[i] = obj.nextInt();
+}
+for(i=1;i<5;i++)
+{
+if(a[i]>max)
+{
+max=a[i];
+}
+}
+System.out.println("the maximum array is"+ max);
+}
+}
+***********************************************************************************
+// for each loop
+class forloop
+{
+public static void main(String[] args)
+{
+int a[]={1,2,3,4};
+for(int i:a)
+{
+System.out.println(i);
+}
+}
+}
+********************************************************************************************
+// sum of n natrual number using the function and return the value to the main
+import java.util.Scanner;
+class fn2{
+ static int add(int n)
+{
+	int i;
+	
+	int sum=0;
+
+
+ for(i=1;i<=n;i++)
+{
+	sum=sum+i;
+}
+return sum;
+}
+public static void main(String[] args)
+{
+	Scanner obj = new Scanner(System.in);
+ int n = obj.nextInt();
+int c =add(n);
+System.out.println(c);
+}
+
+
+
+}
+
+***************************************************************************************
+// wrapper Class
+import java.util.*;
+public static wrapper1{
+
+public static void main(String[] args)
+{
+int n=0; //primitive data type
+Integer obj=Integer.valueof(n);
+System.out.println(n+ " " + obj):
+}
+}
+********************************************************************************************
+// classes concept
+class Student1
+{
+int id;
+String name;
+}
+class Student
+{
+public static void main(String[] arg)
+{
+Student1 obj1= new Student1();
+obj1.id=10; obj1.name="aa";
+System.out.println(obj1.id);
+System.out.println(obj1.name);
+
+Student1 obj2= new Student1();
+obj2.id=20; obj2.name="hh";
+System.out.println(obj2.id);
+System.out.println(obj2.name);
+
+}
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// this keyword call the constructor
+class students1
+{
+
+students1()  // parameterized constructor
+ {
+ System.out.println("hello from default constructor");
+ }
+ students1(int x)
+ {
+ this();
+ System.out.println(x);
+ }
+ public static void main(String[] args)
+ {
+ students1 obj=new students1(10);
+
+ }}
